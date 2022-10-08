@@ -1,5 +1,6 @@
 <template>
 <div>
+    <img style="width: 50px;" src="@/assets/logo.svg" alt="">
     <div>{{msg}}</div>
     <button @click="addList">+++</button>
     <ul>
@@ -14,6 +15,7 @@
 <script setup>
 import {defineProps,defineEmits} from "vue";
 // console.log($attrs);
+// const svgLogo = require("@/assets/logo.svg")
 const props = defineProps({
     list: {
         type: Array,

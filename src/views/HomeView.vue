@@ -30,6 +30,7 @@ import { reactive } from "vue";
 
     const simpleThrottler = (fn,time,params) => {
       if(time.timerId) {
+        alert("请勿重复点击！！！！！！！！！！")
         clearTimeout(time.timerId)
         time.timerId = ""
       }
