@@ -3,15 +3,15 @@
     12313
     <div class="details">
 <!-- 11      <slot name="foot" :data="data"></slot> -->
-11      <slot  :data="data"></slot>
+        <slot :data="data"></slot>
     </div>
   </div>
 </template>
 <script setup>
   import { reactive } from 'vue';
   const data = reactive({
-    name: 'aa',
-    value: 'bb'
+    name: '子组件name',
+    value: '子组件value'
   })
   console.log(data);
 </script>
